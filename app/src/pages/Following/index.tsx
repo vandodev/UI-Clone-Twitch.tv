@@ -4,6 +4,8 @@ import { View } from 'react-native';
 import { FlatList } from 'react-native-gesture-handler';
 import Header from '../../components/Header';
 import Heading from '../../components/Heading';
+import Title from '../../components/Title';
+
 
 import {Wrapper, Container, Main } from './styles';
 
@@ -25,28 +27,28 @@ const Following: React.FC = () => {
 
       {
         key:'FOLLWqED_CATEGORIES',
-        render: () => <View />,
+        render: () => <Title>Folowed categories</Title>,
         isTitle:true
       },
       {key:'C1', render: () => <View />},
 
       {
         key:'LIVE_CHENNELS',
-        render: () => <View />,
+        render: () => <Title>Live chennels</Title>,render: () => <View />,
         isTitle:true
       },
       {key:'C2', render: () => <View />},
 
       {
         key:'CONTINE_WATCHING',
-        render: () => <View />,
+        render: () => <Title>Continue wathing</Title>,
         isTitle:true
       },
       {key:'C3', render: () => <View />},
 
       {
         key:'OFLINE_CHENNELS',
-        render: () => <View />,
+        render: () => <Title>Offiline chennels</Title>,
         isTitle:true
       },
       {key:'C4', render: () => <View />}
