@@ -3,6 +3,7 @@ import React from 'react';
 import { View } from 'react-native';
 import { FlatList } from 'react-native-gesture-handler';
 import Header from '../../components/Header';
+import Heading from '../../components/Heading';
 
 import {Wrapper, Container, Main } from './styles';
 
@@ -19,11 +20,11 @@ const Following: React.FC = () => {
 
       {
         key:'PAGE_HEADING',
-        render: () => <View />
+        render: () => <Heading>Following</Heading>,
       },
 
       {
-        key:'FOLLWED_CATEGORIES',
+        key:'FOLLWqED_CATEGORIES',
         render: () => <View />,
         isTitle:true
       },
