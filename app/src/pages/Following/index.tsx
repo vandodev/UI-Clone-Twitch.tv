@@ -5,7 +5,7 @@ import { FlatList } from 'react-native-gesture-handler';
 import Header from '../../components/Header';
 import Heading from '../../components/Heading';
 import Title from '../../components/Title';
-
+import CategoryList from '../../components/CategoryList';
 
 import {Wrapper, Container, Main } from './styles';
 
@@ -30,11 +30,11 @@ const Following: React.FC = () => {
         render: () => <Title>Folowed categories</Title>,
         isTitle:true
       },
-      {key:'C1', render: () => <View />},
+      {key:'C1', render: () => <CategoryList />},
 
       {
         key:'LIVE_CHENNELS',
-        render: () => <Title>Live chennels</Title>,render: () => <View />,
+        render: () => <Title>Live chennels</Title>,
         isTitle:true
       },
       {key:'C2', render: () => <View />},
